@@ -19,7 +19,7 @@ Ce projet illustre une communication asynchrone entre deux microservices **Sprin
 - Désérialise le message JSON.
 - Persiste les données reçues dans une base **MySQL**.
 
-## Demarrage
+##ddd Demarrage
 
 1.  **Pré-requis** :
     - RabbitMQ (Port 5672/15672)
