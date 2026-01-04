@@ -1,11 +1,11 @@
 # TP 31 : Architecture Microservices avec RabbitMQ
 
-## 📡 Aperçu
+## Apercu
 Ce projet illustre une communication asynchrone entre deux microservices **Spring Boot** via le broker de messages **RabbitMQ**.
 
-## 🏗️ Architecture
+## Architecture
 
-### 1. Producer Service (`RabbitMQ Producer`)
+### 1. Producer Service (RabbitMQ Producer)
 - Expose une API REST (`POST /api/produce`).
 - Reçoit un objet JSON (User) avec `publicId` et `fullName`.
 - Publie le message sur un **Exchange** RabbitMQ.
@@ -14,12 +14,12 @@ Ce projet illustre une communication asynchrone entre deux microservices **Sprin
 - Agit comme intermédiaire (Message Broker).
 - Supporte le découplage temporel entre le producteur et le consommateur.
 
-### 3. Consumer Service (`RabbitMQ Consumer`)
+### 3. Consumer Service (RabbitMQ Consumer)
 - Écoute une **Queue** spécifique.
 - Désérialise le message JSON.
 - Persiste les données reçues dans une base **MySQL**.
 
-## 🚀 Démarrage
+## Demarrage
 
 1.  **Pré-requis** :
     - RabbitMQ (Port 5672/15672)
@@ -37,7 +37,7 @@ Ce projet illustre une communication asynchrone entre deux microservices **Sprin
     mvn spring-boot:run
     ```
 
-## 📩 Test
+## Test
 Envoyer une requête POST :
 ```json
 {
